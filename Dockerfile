@@ -1,7 +1,7 @@
 # In the official alpine image, ffmpeg is compiled without "--enable-libfreetype" option,
 # so we will use jrottenberg's image.
 
-FROM jrottenberg/ffmpeg:4.3-alpine
+FROM jrottenberg/ffmpeg:4.2-alpine
 
 COPY scripts/entrypoint.sh /entrypoint.sh
 COPY requirements.txt /requirements.txt
