@@ -147,7 +147,6 @@ async def photo_handler(message):
         code = await watermark(path, fname, watermark_text, c, rotate)
         if code:
             await message.answer('Something went wrong, please try again 😔')
-            await message.answer(code)
             return
         wm_file = await aiofiles.open(f'images/out/{c}/{fname}', 'rb')
         await message.answer_photo(wm_file)

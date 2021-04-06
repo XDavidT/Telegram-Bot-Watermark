@@ -5,6 +5,8 @@ FROM jrottenberg/ffmpeg:4.2-alpine
 
 COPY scripts/entrypoint.sh /entrypoint.sh
 COPY requirements.txt /requirements.txt
+COPY requirements.txt /requirements.txt
+COPY fonts/ app/fonts/
 
 RUN \
     chmod +x /entrypoint.sh && \

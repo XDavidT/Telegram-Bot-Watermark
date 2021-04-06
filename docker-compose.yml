@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./app:/app
+      - ./fonts:/app/fonts
     environment:
       - TOKEN=token:token
       - WATERMARK=sometexthere
